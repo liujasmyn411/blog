@@ -105,5 +105,4 @@ deploy:
   type: git
   repo: https://github.com/liujasmyn411/blog.git
   branch: gh-pages  # 专门用于存放静态文件的分支
-  message: "up blog {{now('yyyy-MM-DD HH:mm:ss')}}"
-  
+  message: "up blog"
