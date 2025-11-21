@@ -11,13 +11,13 @@
 # Docs: https://redefine-docs.ohevan.com/basic/info
 info:
   # Site title
-  title: Theme Redefine
+  title: 虚帅
   # Site subtitle
-  subtitle: Redefine Your Hexo Journey.
+  subtitle: 
   # Author name
-  author: The Redefine Team
+  author: 虚帅
   # Site URL
-  url: https://redefine.ohevan.com
+  url: https://liujasmyn411.github.io
 # BASIC INFORMATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -29,7 +29,7 @@ defaults:
   # Site logo
   logo: 
   # Site avatar
-  avatar: /images/redefine-avatar.svg
+  avatar: /images/avatar.png
 # IMAGE CONFIGURATION <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< end
 
 
@@ -100,7 +100,7 @@ global:
   open_graph:
     enable: true
     image: /images/redefine-og.webp  # default og:image
-    description: Hexo Theme Redefine, Redefine Your Hexo Journey.
+    description: 纯手工古法编码，拒绝 AI 预制程序。
   # Google Analytics
   google_analytics:
     enable: false # Whether to enable Google Analytics
@@ -134,10 +134,10 @@ home_banner:
     light: /images/wallhaven-wqery6-light.webp # light mode
     dark: /images/wallhaven-wqery6-dark.webp # dark mode
   # Home banner title
-  title: Theme Redefine
+  title: 纯手工古法编码
   # Home banner subtitle
   subtitle:
-    text: [] # subtitle text, array
+    text: [拒绝 AI 预制程序] # subtitle text, array
     hitokoto:  # 一言配置
       enable: false # Whether to enable hitokoto
       show_author: false # Whether to show author
@@ -176,10 +176,10 @@ home_banner:
     style: default # default, reverse, center
     # Social links
     links:
-      github:  # your GitHub URL
+      github: liujasmyn411 # your GitHub URL
       instagram: # your Instagram URL
       zhihu:  # your ZhiHu URL
-      twitter:  # your twitter URL
+      twitter: liuJasmyn_ # your twitter URL
       email:  # your email
       # ...... # you can add more
     # Social links with QRcode drawers
@@ -201,8 +201,8 @@ navbar:
     transparency: 35 #percent (10-99)
   # Navbar width (usually no need to modify)
   width:
-    home: 1200px #home page
-    pages: 1000px #other pages
+    home: 120px #home page
+    pages: 100px #other pages
   # Navbar links
   links:
     Home: 
