@@ -1748,7 +1748,7 @@ pre .deletion {
   position: relative;
   height: 100%;
   width: 100%;
-  max-width: 1000px;
+  max-width: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1757,7 +1757,7 @@ pre .deletion {
   transition: max-width 0.3s ease;
 }
 .navbar-container .navbar-content.has-home-banner {
-  max-width: 1200px;
+  max-width: 120px;
 }
 .navbar-container .navbar-content .left {
   display: flex;
@@ -2058,7 +2058,7 @@ pre .deletion {
   transition: max-width 0.3s ease-out;
 }
 html.is-animating .transition-navbar {
-  max-width: 1000px !important;
+  max-width: 100px !important;
   transition: max-width 0.2s ease-out;
 }
 .page-template-container {
