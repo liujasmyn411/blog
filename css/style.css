@@ -709,7 +709,7 @@ button {
   transition-delay: 0s, 0s, 0s, 0s, 0s, 0s;
   transition-duration: 0.2s, 0.2s, 0.2s, 0.2s, 0.2s, 0.2s;
   transition-timing-function: ease, ease, ease, ease, linear, linear;
-  margin: 1rem auto 1rem;
+  margin: 1rem 0 1rem;
 }
 .markdown-body del.mask {
   text-decoration: none !important;
@@ -5466,16 +5466,16 @@ html.is-animating .transition-fade-down {
   transition: all 0.2s ease;
 }
 .home-content-container {
-  margin-right: 38px;
+  margin-left: 38px;
 }
 @media (max-width: 768px) {
   .home-content-container {
-    margin-right: 0;
+    margin-left: 0;
   }
 }
 @media (max-width: 640px) {
   .home-content-container {
-    margin-right: 0;
+    margin-left: 0;
   }
 }
 .home-content-container .seo-reader-text {
