@@ -128,7 +128,8 @@ layout: about
 ```
 
 ### 测试主题效果
-`hexo server`后，可以访问链接进行预览，我是这个预览链接：http://localhost:400。
+
+`hexo server`后，可以访问链接进行预览，我是这个预览链接：http://localhost:4000
 
 预览完毕后可以随时按 Ctrl+c 终止预览，终止后不会影响最终主题构建效果。
 ```bash
