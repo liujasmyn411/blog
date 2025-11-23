@@ -890,24 +890,24 @@ button {
   :root {
     --inline-code-foreground: #c9d1d9;
     --inline-code-background: #313131;
-    --highlight-background: #1e1e1e;
-    --highlight-foreground: #dcdcdc;
-    --highlight-keyword: #569cd6;
-    --highlight-link: #569cd6;
-    --highlight-built-in: #4ec9b0;
-    --highlight-number: #b8d7a3;
-    --highlight-string: #d69d85;
-    --highlight-regexp: #9a5334;
-    --highlight-subst: #dcdcdc;
-    --highlight-comment: #57a64a;
-    --highlight-doctag: #608b4e;
-    --highlight-meta: #9b9b9b;
-    --highlight-variable: #bd63c5;
-    --highlight-attr: #9cdcfe;
-    --highlight-section: #ffd700;
-    --highlight-bullet: #d7ba7d;
-    --highlight-addition: #144212;
-    --highlight-deletion: #600;
+    --highlight-background: #011627;
+    --highlight-foreground: #d6deeb;
+    --highlight-keyword: #c792ea;
+    --highlight-link: #ff869a;
+    --highlight-built-in: #addb67;
+    --highlight-number: #f78c6c;
+    --highlight-string: #ecc48d;
+    --highlight-regexp: #5ca7e4;
+    --highlight-subst: #d3423e;
+    --highlight-comment: #637777;
+    --highlight-doctag: #7fdbca;
+    --highlight-meta: #82aaff;
+    --highlight-variable: #addb67;
+    --highlight-attr: #7fdbca;
+    --highlight-section: #82b1ff;
+    --highlight-bullet: #d9f5dd;
+    --highlight-addition: #addb67;
+    --highlight-deletion: rgba(239,83,80,0.565);
   }
 }
 .light-mode {
@@ -935,24 +935,24 @@ button {
 .dark-mode {
   --inline-code-foreground: #c9d1d9;
   --inline-code-background: #313131;
-  --highlight-background: #1e1e1e;
-  --highlight-foreground: #dcdcdc;
-  --highlight-keyword: #569cd6;
-  --highlight-link: #569cd6;
-  --highlight-built-in: #4ec9b0;
-  --highlight-number: #b8d7a3;
-  --highlight-string: #d69d85;
-  --highlight-regexp: #9a5334;
-  --highlight-subst: #dcdcdc;
-  --highlight-comment: #57a64a;
-  --highlight-doctag: #608b4e;
-  --highlight-meta: #9b9b9b;
-  --highlight-variable: #bd63c5;
-  --highlight-attr: #9cdcfe;
-  --highlight-section: #ffd700;
-  --highlight-bullet: #d7ba7d;
-  --highlight-addition: #144212;
-  --highlight-deletion: #600;
+  --highlight-background: #011627;
+  --highlight-foreground: #d6deeb;
+  --highlight-keyword: #c792ea;
+  --highlight-link: #ff869a;
+  --highlight-built-in: #addb67;
+  --highlight-number: #f78c6c;
+  --highlight-string: #ecc48d;
+  --highlight-regexp: #5ca7e4;
+  --highlight-subst: #d3423e;
+  --highlight-comment: #637777;
+  --highlight-doctag: #7fdbca;
+  --highlight-meta: #82aaff;
+  --highlight-variable: #addb67;
+  --highlight-attr: #7fdbca;
+  --highlight-section: #82b1ff;
+  --highlight-bullet: #d9f5dd;
+  --highlight-addition: #addb67;
+  --highlight-deletion: rgba(239,83,80,0.565);
 }
 pre,
 .highlight {
@@ -1003,7 +1003,6 @@ pre code {
   padding-bottom: 5px;
   overflow: auto;
   margin: 0 !important;
-  border-top: 1px solid var(--shadow-color-1);
 }
 .highlight:hover::-webkit-scrollbar-thumb {
   border: 3px solid rgba(183,183,183,0.3);
@@ -1221,40 +1220,25 @@ pre .deletion {
   top: 0;
 }
 .code-container {
-  background: var(--third-background-color);
+  background: var(--highlight-background);
   border-radius: 18px;
-  box-shadow: var(--redefine-box-shadow-flat);
   padding-top: 40px;
+  padding-left: 5px;
   margin-top: 10px;
   margin-bottom: 1.2rem;
   position: relative;
+  box-shadow: var(--redefine-box-shadow-flat);
 }
 .code-container figcaption {
   font-weight: bold;
   font-size: 16px;
   position: absolute;
-  top: 12px;
+  top: 16px;
   left: 50%;
   transform: translateX(-50%);
 }
 .code-container figcaption a {
   margin-left: 10px;
-}
-.code-container::before {
-  position: absolute;
-  content: attr(data-rel);
-  line-height: 38px;
-  border-radius: 50%;
-  box-shadow: none;
-  height: 12px;
-  left: 12px;
-  position: absolute;
-  width: auto;
-  margin-left: 80px;
-  top: 0;
-  color: var(--default-text-color);
-  font-weight: bold;
-  font-size: 16px;
 }
 .code-container .folded {
   height: 0 !important;
@@ -1264,20 +1248,21 @@ pre .deletion {
   width: 0 !important;
   overflow: hidden !important;
 }
-.code-container::after {
-  content: ' ';
+.code-container::before {
   position: absolute;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background: #fc625d;
-  width: 12px;
+  content: attr(data-rel);
+  line-height: 42px;
+  border-radius: 18px;
+  box-shadow: none;
   height: 12px;
-  top: 0;
-  left: 20px;
-  margin-top: 13px;
-  -webkit-box-shadow: 20px 0px #fdbc40, 40px 0px #35cd4b;
-  box-shadow: 20px 0px #fdbc40, 40px 0px #35cd4b;
-  z-index: 3;
+  left: 4px;
+  position: absolute;
+  width: auto;
+  margin-left: 10px;
+  top: 2px;
+  color: var(--default-text-color);
+  font-weight: bold;
+  font-size: 16px;
 }
 .nf-container {
   width: 100%;
