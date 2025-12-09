@@ -1,7 +1,7 @@
 ---
 title: Problems in building a hexo blog
 date: 2025-11-16 20:55:42
-tags: 
+tags: error
 ---
 
 # 路径错误
