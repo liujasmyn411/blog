@@ -272,7 +272,7 @@ DOCTYPE 声明（文档类型声明）是放在 HTML 文档最顶部的指令，
 ```html
 <form action="https://search.jd.com/search" method="get" target="_blank">
 <!-- 文本输入框 -->
-<fieldset>
+ <fieldset>
      <legend>主要信息</legend>
     <label for="zhanghu">账户：</label>
         <input id="zhanghu" type="text" name="account" value="请输入账户" maxlength="10"><br>
@@ -288,10 +288,10 @@ DOCTYPE 声明（文档类型声明）是放在 HTML 文档最顶部的指令，
         <label>
         <input type="radio" name="gender" value="female" checked>女
     </label>
-</fieldset>
+ </fieldset>
 <br>
        <!-- 多选框 -->
-<fieldset>
+ < fieldset>
         <legend>附属信息</legend>
           爱好：
           <label>
@@ -311,7 +311,7 @@ DOCTYPE 声明（文档类型声明）是放在 HTML 文档最顶部的指令，
             <option value="青">青岛</option>
             <option value="川" selected>成都</option>
           </select>
-</fieldset>
+ </fieldset>
 
 <!-- 隐藏域 -->
 <input type="hidden" name="from" value="bing"><br>
@@ -360,6 +360,10 @@ DOCTYPE 声明（文档类型声明）是放在 HTML 文档最顶部的指令，
       I   love  you
           love
 </pre>
+```
+### 12 H5 新增
+```html
+headerS
 ```
 
 ### 参考：
