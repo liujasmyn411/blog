@@ -140,7 +140,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://liujasmyn411.github.io/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-11-30T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-12-09T20:20:10.874Z">
+<meta property="article:modified_time" content="2025-12-11T06:59:59.031Z">
 <meta property="article:author" content="Jasmyn">
 <meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
@@ -373,8 +373,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-12-10 04:20:10</span>
-            <span class="mobile">2025-12-10 04:20:10</span>
+            <span class="desktop">2025-12-11 14:59:59</span>
+            <span class="mobile">2025-12-11 14:59:59</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -449,7 +449,32 @@
 <p>在终端存放 js 文件夹目录下执行</p>
 <div class="code-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node first.<span class="property">js</span></span><br></pre></td></tr></table></figure></div>
 
-<p>打开浏览器访问 <a href="http://localhost:3000，页面会显示">http://localhost:3000，页面会显示</a> “RUNOOB Node Test ~ Hello, Node.js!”</p>
+<p>打开浏览器访问 <a href="http://localhost:3000，页面会显示：">http://localhost:3000，页面会显示：</a></p>
+<p><strong>“RUNOOB Node Test ~ Hello, Node.js!</strong></p>
+<h3 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h3><p>nvm 是 Node Version Manager（Node 版本管理器）的缩写，它是一个用于在同一台机器上管理和切换多个 Node.js 版本的工具。</p>
+<h4 id="安装-nvm"><a href="#安装-nvm" class="headerlink" title="安装 nvm"></a>安装 nvm</h4><p>我是 win 系统，先进入 github<a class="link"   target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases" >下载 nvm-windows<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>，但是我会跳转到这个界面 <a class="link"   target="_blank" rel="noopener" href="https://www.virustotal.com/gui/file/2d5ad523aa6182205da77c0eb8210638aaa8792f4e6a4bc12e1ac854c5455a68?nocache=1%EF%BC%8C%E8%BF%99%E5%8F%AF%E8%83%BD%E6%98%AF%E5%AE%89%E5%85%A8%E8%BD%AF%E4%BB%B6%E8%BF%87%E5%BA%A6%E4%BF%9D%E6%8A%A4%E5%AF%BC%E8%87%B4%E7%9A%84%E3%80%82" >https://www.virustotal.com/gui/file/2d5ad523aa6182205da77c0eb8210638aaa8792f4e6a4bc12e1ac854c5455a68?nocache=1，这可能是安全软件过度保护导致的。<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a><br>9</p>
+<p>所以我直接跳转<a class="link"   target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases/download/1.1.11/nvm-setup.exe" >https://github.com/coreybutler/nvm-windows/releases/download/1.1.11/nvm-setup.exe<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>下载成功，按步骤安装。</p>
+<p>安装过程中出现一下提醒：<br>Node v24.11.1 is already installed. Do you want NVM to control thisversion?</p>
+<p>我选择 yes，选择 yes 后 nvm 会统一管理所有 Node.js 版本，避免版本冲突。安装完成后，重启终端或者重启电脑，在终端验证 nvm 版本。</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm version</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="验证-nvm-和-node-js-安装"><a href="#验证-nvm-和-node-js-安装" class="headerlink" title="验证 nvm 和 node.js 安装"></a>验证 nvm 和 node.js 安装</h4><p>我在之前创建的 helloworld.js 文件里输入以下内容：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">console.log(<span class="string">&#x27;Hello, Node.js!&#x27;</span>);</span><br><span class="line">console.log(<span class="string">&#x27;Node.js 版本:&#x27;</span>, process.version);</span><br><span class="line">console.log(<span class="string">&#x27;当前工作目录:&#x27;</span>, process.cwd());</span><br><span class="line">console.log(<span class="string">&#x27;操作系统:&#x27;</span>, process.platform);</span><br></pre></td></tr></table></figure></div>
+<p>但是出现以下提醒：<br>D:\work\my-study-notes\node-test&gt;node first.js<br>‘node’ 不是内部或外部命令，也不是可运行的程序<br>或批处理文件。</p>
+<p>D:\work\my-study-notes\node-test&gt;nvm list<br>No installations recognized.</p>
+<p>这表明我的的 Node.js 没有正确安装或环境变量有问题。nvm 没有检测到任何 Node.js 安装。我是这么解决的：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装你之前已有的 v24.11.1</span></span><br><span class="line">nvm install 24.11.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用这个版本</span></span><br><span class="line">nvm use 24.11.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置为默认版本</span></span><br><span class="line">nvm <span class="built_in">alias</span> default 24.11.1</span><br></pre></td></tr></table></figure></div>
+<p>然后重新 node helloworld.js，最后输出：</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Hello, Node.js!</span><br><span class="line">Node.js 版本：v24.11.1</span><br><span class="line">当前工作目录：D:\work\my-study-notes\node-test</span><br><span class="line">操作系统：win32</span><br></pre></td></tr></table></figure></div>
+<p>还可以检查全局安装路径</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看 npm 全局包安装路径</span></span><br><span class="line">npm config get prefix</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看 npm 配置</span></span><br><span class="line">npm config list</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看 Node.js 安装路径</span></span><br><span class="line"><span class="built_in">which</span> node</span><br><span class="line"><span class="comment"># Windows 上使用</span></span><br><span class="line"><span class="built_in">where</span> node</span><br></pre></td></tr></table></figure></div>
+
+
+
+
+
+
+
 
 		</div>
 
@@ -464,7 +489,7 @@
         
             <li>
                 <strong>Updated at
-                    :</strong> 2025-12-10 04:20:10
+                    :</strong> 2025-12-11 14:59:59
             </li>
         
         <li>
@@ -568,7 +593,7 @@
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
 		<div class="page-title">Node.js</div>
-		<ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Node-js"><span class="nav-text">什么是 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Node-js"><span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%AC%AC%E4%B8%80%E4%B8%AA-Node-js-%E7%A8%8B%E5%BA%8F"><span class="nav-text">运行第一个 Node.js 程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js-%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6"><span class="nav-text">Node.js 核心机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA-Node-js-%E7%A8%8B%E5%BA%8F"><span class="nav-text">创建第一个 Node.js 程序</span></a></li></ol>
+		<ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Node-js"><span class="nav-text">什么是 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Node-js"><span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%AC%AC%E4%B8%80%E4%B8%AA-Node-js-%E7%A8%8B%E5%BA%8F"><span class="nav-text">运行第一个 Node.js 程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js-%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6"><span class="nav-text">Node.js 核心机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA-Node-js-%E7%A8%8B%E5%BA%8F"><span class="nav-text">创建第一个 Node.js 程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nvm"><span class="nav-text">nvm</span></a></li></ol>
 
 	</div>
 </div>
