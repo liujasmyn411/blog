@@ -109,7 +109,80 @@ server.listen(port, () => {
 node first.js
 ```
 
-打开浏览器访问 http://localhost:3000，页面会显示 "RUNOOB Node Test ~ Hello, Node.js!"
+打开浏览器访问 http://localhost:3000，页面会显示：
+
+**"RUNOOB Node Test ~ Hello, Node.js!**
+
+### nvm
+nvm 是 Node Version Manager（Node 版本管理器）的缩写，它是一个用于在同一台机器上管理和切换多个 Node.js 版本的工具。
+
+#### 安装 nvm
+我是 win 系统，先进入 github[下载 nvm-windows](https://github.com/coreybutler/nvm-windows/releases)，但是我会跳转到这个界面 https://www.virustotal.com/gui/file/2d5ad523aa6182205da77c0eb8210638aaa8792f4e6a4bc12e1ac854c5455a68?nocache=1，这可能是安全软件过度保护导致的。
+9
+
+所以我直接跳转[https://github.com/coreybutler/nvm-windows/releases/download/1.1.11/nvm-setup.exe](https://github.com/coreybutler/nvm-windows/releases/download/1.1.11/nvm-setup.exe)下载成功，按步骤安装。
+
+安装过程中出现一下提醒：
+Node v24.11.1 is already installed. Do you want NVM to control thisversion?
+
+我选择 yes，选择 yes 后 nvm 会统一管理所有 Node.js 版本，避免版本冲突。安装完成后，重启终端或者重启电脑，在终端验证 nvm 版本。
+
+```bash
+nvm version
+```
+
+#### 验证 nvm 和 node.js 安装
+我在之前创建的 helloworld.js 文件里输入以下内容：
+
+```bash
+console.log('Hello, Node.js!');
+console.log('Node.js 版本:', process.version);
+console.log('当前工作目录:', process.cwd());
+console.log('操作系统:', process.platform);
+```
+但是出现以下提醒：
+D:\work\my-study-notes\node-test>node first.js
+'node' 不是内部或外部命令，也不是可运行的程序
+或批处理文件。
+
+D:\work\my-study-notes\node-test>nvm list
+No installations recognized.
+
+这表明我的的 Node.js 没有正确安装或环境变量有问题。nvm 没有检测到任何 Node.js 安装。我是这么解决的：
+
+```bash
+# 安装你之前已有的 v24.11.1
+nvm install 24.11.1
+
+# 使用这个版本
+nvm use 24.11.1
+
+# 设置为默认版本
+nvm alias default 24.11.1
+```
+然后重新 node helloworld.js，最后输出：
+```
+Hello, Node.js!
+Node.js 版本：v24.11.1
+当前工作目录：D:\work\my-study-notes\node-test
+操作系统：win32
+```
+还可以检查全局安装路径
+
+```bash
+# 查看 npm 全局包安装路径
+npm config get prefix
+
+# 查看 npm 配置
+npm config list
+
+# 查看 Node.js 安装路径
+which node
+# Windows 上使用
+where node
+```
+
+
 
 
 
