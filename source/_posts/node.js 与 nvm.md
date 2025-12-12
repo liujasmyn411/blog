@@ -1,7 +1,7 @@
 ---
-title: Node.js
-date: 2025-12-
-tags: js
+title: node.js 简介与 nvm
+date: 2025-12-11
+tags: node.js
 ---
 写这篇文章主要是为了记录自己学习 node.js 的过程。
 
@@ -181,10 +181,3 @@ which node
 # Windows 上使用
 where node
 ```
-
-
-
-
-
-
-
