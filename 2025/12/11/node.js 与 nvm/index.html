@@ -123,7 +123,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://liujasmyn411.github.io/2025/11/21/css/"/>
+    <link rel="canonical" href="https://liujasmyn411.github.io/2025/12/11/node.js 与 nvm/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -133,16 +133,16 @@
         
         <meta name="description" content="纯手工古法编码，拒绝 AI 预制程序。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Notes on learning css">
-<meta property="og:url" content="https://liujasmyn411.github.io/2025/11/21/css/index.html">
+<meta property="og:title" content="node.js 简介与 nvm">
+<meta property="og:url" content="https://liujasmyn411.github.io/2025/12/11/node.js%20%E4%B8%8E%20nvm/index.html">
 <meta property="og:site_name" content="Jasmyn 的 blog">
 <meta property="og:description" content="纯手工古法编码，拒绝 AI 预制程序。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://liujasmyn411.github.io/images/redefine-og.webp">
-<meta property="article:published_time" content="2025-11-20T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-11-22T10:45:12.590Z">
+<meta property="article:published_time" content="2025-12-10T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-12-12T05:04:25.654Z">
 <meta property="article:author" content="Jasmyn">
-<meta property="article:tag" content="css">
+<meta property="article:tag" content="node.js">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://liujasmyn411.github.io/images/redefine-og.webp">
     
@@ -156,7 +156,7 @@
     
     <title>
         
-            Notes on learning css | 虚帅
+            node.js 简介与 nvm | 虚帅
         
     </title>
 
@@ -345,7 +345,7 @@
 		<div class="article-title relative w-full">
 			
 			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">Notes on learning css</h1>
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">node.js 简介与 nvm</h1>
 			</div>
 			
 		</div>
@@ -366,15 +366,15 @@
 					<div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2025-11-21</span>
-        <span class="mobile">2025-11-21</span>
+        <span class="desktop">2025-12-11</span>
+        <span class="mobile">2025-12-11</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-11-22 18:45:12</span>
-            <span class="mobile">2025-11-22 18:45:12</span>
+            <span class="desktop">2025-12-12 13:04:25</span>
+            <span class="mobile">2025-12-12 13:04:25</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -386,7 +386,7 @@
             <ul>
                 
                     <li>
-                        <a href="/blog/tags/css/">css</a>&nbsp;
+                        <a href="/blog/tags/node-js/">node.js</a>&nbsp;
                     </li>
                 
             </ul>
@@ -408,26 +408,84 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<div class="code-container" data-rel="Html"><figure class="iseeu highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span> <span class="attr">lang</span>=<span class="string">&quot;zh-CN&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">&quot;viewport&quot;</span> <span class="attr">content</span>=<span class="string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>css<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">        <span class="selector-tag">h2</span>&#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">color</span>: darkcyan;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">font-size</span>:<span class="number">40px</span>;</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css">        <span class="selector-tag">img</span>&#123;</span></span><br><span class="line"><span class="language-css">            <span class="attribute">width</span>:<span class="number">200px</span> ;</span></span><br><span class="line"><span class="language-css">        &#125;</span></span><br><span class="line"><span class="language-css">    </span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- css 编写位置 1-行内样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h1</span> <span class="attr">style</span>=<span class="string">&quot;color: cadetblue;font-size: 60px;&quot;</span>&gt;</span>深圳今天回温了<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- css 编写位置 1-内部样式 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">h2</span>&gt;</span>前两天深圳降温了<span class="tag">&lt;/<span class="name">h2</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;./向你敬礼.jpg&quot;</span> <span class="attr">alt</span>=<span class="string">&quot;向你敬礼&quot;</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- css 编写位置 1-外部样式 --&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure></div>
+			<p>写这篇文章主要是为了记录自己学习 node.js 的过程。</p>
+<h3 id="什么是-Node-js"><a href="#什么是-Node-js" class="headerlink" title="什么是 Node.js"></a>什么是 Node.js</h3><p>Node.js 是一个开源的、跨平台的 JavaScript 运行时环境，它让开发者能够使用 JavaScript 编写服务器端应用程序。简单来说，它让 JavaScript 从浏览器中”走出来”，可以在服务器上运行。</p>
+<h3 id="安装-Node-js"><a href="#安装-Node-js" class="headerlink" title="安装 Node.js"></a>安装 Node.js</h3><p>访问<a class="link"   target="_blank" rel="noopener" href="https://nodejs.org/zh-cn" >Node.js 官方网站<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>下载安装包，装完成后，打开终端，运行以下命令来验证是否成功：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure></div>
 
+<p>注意这个命令可以在任意目录下执行，它会显示当前系统安装的 Node.js 版本。我这里显示的是 v24.11.1。</p>
+<h3 id="运行第一个-Node-js-程序"><a href="#运行第一个-Node-js-程序" class="headerlink" title="运行第一个 Node.js 程序"></a>运行第一个 Node.js 程序</h3><p>下面我们要执行 console.log(“Hello World”)，这个命令需要在包含 helloworld.js 文件的目录下执行，所以建议专门新建一个 JavaScript 文件夹来存放后续的代码。</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> node-test</span><br><span class="line"><span class="built_in">cd</span> node-test</span><br><span class="line"><span class="built_in">echo</span> console.log(<span class="string">&quot;Hello World&quot;</span>); &gt; helloworld.js</span><br></pre></td></tr></table></figure></div>
+
+<p>或者先新建 js 文件再手动编辑文件内容</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span>. &gt; helloworld.js</span><br></pre></td></tr></table></figure></div>
+
+<p>然后使用 dir 检查文件是否创建成功，成功的话是可以看到 helloworld.js 文件，查看文件内容是可以输出 console.log(“Hello World”);的。</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">dir</span></span><br><span class="line"><span class="built_in">type</span> helloworld.js</span><br></pre></td></tr></table></figure></div>
+<h3 id="Node-js-核心机制"><a href="#Node-js-核心机制" class="headerlink" title="Node.js 核心机制"></a>Node.js 核心机制</h3><p>Node.js 的事件驱动和非阻塞 I&#x2F;O 模型是其高性能的核心机制。</p>
+<h4 id="事件驱动"><a href="#事件驱动" class="headerlink" title="事件驱动"></a>事件驱动</h4><p>事件驱动暂时不明白，过后再补充吧。</p>
+<h4 id="非阻塞-I-O-模型"><a href="#非阻塞-I-O-模型" class="headerlink" title="非阻塞 I&#x2F;O 模型"></a>非阻塞 I&#x2F;O 模型</h4><p>这里先介绍一下非阻塞 I&#x2F;O 模型，非阻塞 I&#x2F;O 是一种编程模型，其中 I&#x2F;O 操作不会阻塞程序的主执行线程。当一个 I&#x2F;O 操作被调用时，程序<strong>不会等待</strong>它完成，而是<strong>立即返回</strong>并继续执行后续代码。</p>
+<div class="code-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">客户端<span class="number">1</span>请求 → 创建线程<span class="number">1</span> → 等待I/O（阻塞） → 响应</span><br><span class="line">客户端<span class="number">2</span>请求 → 创建线程<span class="number">2</span> → 等待I/O（阻塞） → 响应</span><br><span class="line">客户端<span class="number">3</span>请求 → 创建线程<span class="number">3</span> → 等待I/O（阻塞） → 响应</span><br></pre></td></tr></table></figure></div>
+<p>这里的线程是操作系统能够进行运算调度的最小单位，是进程中的实际运作单位。</p>
+<p>通俗理解，线程是执行代码的路径，一个进程（程序）至少有一个线程（主线程），线程共享进程的内存空间，每个线程有自己的调用栈和寄存器。</p>
+<p>类比经营餐厅，每个客户点完菜（发出请求），都会分配一个服务员（线程），每个服务员全程为同一个客户服务全程（I&#x2F;O），直到客户离店（响应）。Node.js 就相当于一个高效的服务员（主线程）和多个后厨助手（线程池），服务员接收所有订单，交给后厨，然后立即接待下个客户。</p>
+<p>Web 应用中很多的时间在等待 I&#x2F;O，Node.js 用这些时间服务其他请求。</p>
+<h3 id="创建第一个-Node-js-程序"><a href="#创建第一个-Node-js-程序" class="headerlink" title="创建第一个 Node.js 程序"></a>创建第一个 Node.js 程序</h3><p><strong>初始化项目</strong></p>
+<p>在终端进入 node-test 文件夹，初始化 npm 项目，会生产一个 package.json 的文件。</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm init -y</span><br></pre></td></tr></table></figure></div>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/blog/cb08d68cbe9cb59fe1a76311dddf86ff.png"
+                      alt="package.json"
+                ></p>
+<p><strong>创建主文件</strong><br>先创建一个 js 文件</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span>. &gt; first.js</span><br></pre></td></tr></table></figure></div>
+
+<p>输入以下代码</p>
+<div class="code-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> http = <span class="built_in">require</span>(<span class="string">&#x27;http&#x27;</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> server = http.<span class="title function_">createServer</span>(<span class="function">(<span class="params">req, res</span>) =&gt;</span> &#123;</span><br><span class="line">  res.<span class="property">statusCode</span> = <span class="number">200</span>;</span><br><span class="line">  res.<span class="title function_">setHeader</span>(<span class="string">&#x27;Content-Type&#x27;</span>, <span class="string">&#x27;text/plain&#x27;</span>);</span><br><span class="line">  res.<span class="title function_">end</span>(<span class="string">&#x27; RUNOOB Node Test ~ Hello, Node.js!\n&#x27;</span>);</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> port = <span class="number">3000</span>;</span><br><span class="line">server.<span class="title function_">listen</span>(port, <span class="function">() =&gt;</span> &#123;</span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">`服务器运行地址：http://localhost:<span class="subst">$&#123;port&#125;</span>/`</span>);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></div>
+
+<p><strong>运行项目</strong></p>
+<p>在终端存放 js 文件夹目录下执行</p>
+<div class="code-container" data-rel="Javascript"><figure class="iseeu highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node first.<span class="property">js</span></span><br></pre></td></tr></table></figure></div>
+
+<p>打开浏览器访问 <a href="http://localhost:3000，页面会显示：">http://localhost:3000，页面会显示：</a></p>
+<p><strong>“RUNOOB Node Test ~ Hello, Node.js!</strong></p>
+<h3 id="nvm"><a href="#nvm" class="headerlink" title="nvm"></a>nvm</h3><p>nvm 是 Node Version Manager（Node 版本管理器）的缩写，它是一个用于在同一台机器上管理和切换多个 Node.js 版本的工具。</p>
+<h4 id="安装-nvm"><a href="#安装-nvm" class="headerlink" title="安装 nvm"></a>安装 nvm</h4><p>我是 win 系统，先进入 github<a class="link"   target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases" >下载 nvm-windows<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>，但是我会跳转到这个界面 <a class="link"   target="_blank" rel="noopener" href="https://www.virustotal.com/gui/file/2d5ad523aa6182205da77c0eb8210638aaa8792f4e6a4bc12e1ac854c5455a68?nocache=1%EF%BC%8C%E8%BF%99%E5%8F%AF%E8%83%BD%E6%98%AF%E5%AE%89%E5%85%A8%E8%BD%AF%E4%BB%B6%E8%BF%87%E5%BA%A6%E4%BF%9D%E6%8A%A4%E5%AF%BC%E8%87%B4%E7%9A%84%E3%80%82" >https://www.virustotal.com/gui/file/2d5ad523aa6182205da77c0eb8210638aaa8792f4e6a4bc12e1ac854c5455a68?nocache=1，这可能是安全软件过度保护导致的。<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a><br>9</p>
+<p>所以我直接跳转<a class="link"   target="_blank" rel="noopener" href="https://github.com/coreybutler/nvm-windows/releases/download/1.1.11/nvm-setup.exe" >https://github.com/coreybutler/nvm-windows/releases/download/1.1.11/nvm-setup.exe<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>下载成功，按步骤安装。</p>
+<p>安装过程中出现一下提醒：<br>Node v24.11.1 is already installed. Do you want NVM to control thisversion?</p>
+<p>我选择 yes，选择 yes 后 nvm 会统一管理所有 Node.js 版本，避免版本冲突。安装完成后，重启终端或者重启电脑，在终端验证 nvm 版本。</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm version</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="验证-nvm-和-node-js-安装"><a href="#验证-nvm-和-node-js-安装" class="headerlink" title="验证 nvm 和 node.js 安装"></a>验证 nvm 和 node.js 安装</h4><p>我在之前创建的 helloworld.js 文件里输入以下内容：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">console.log(<span class="string">&#x27;Hello, Node.js!&#x27;</span>);</span><br><span class="line">console.log(<span class="string">&#x27;Node.js 版本:&#x27;</span>, process.version);</span><br><span class="line">console.log(<span class="string">&#x27;当前工作目录:&#x27;</span>, process.cwd());</span><br><span class="line">console.log(<span class="string">&#x27;操作系统:&#x27;</span>, process.platform);</span><br></pre></td></tr></table></figure></div>
+<p>但是出现以下提醒：<br>D:\work\my-study-notes\node-test&gt;node first.js<br>‘node’ 不是内部或外部命令，也不是可运行的程序<br>或批处理文件。</p>
+<p>D:\work\my-study-notes\node-test&gt;nvm list<br>No installations recognized.</p>
+<p>这表明我的的 Node.js 没有正确安装或环境变量有问题。nvm 没有检测到任何 Node.js 安装。我是这么解决的：</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装你之前已有的 v24.11.1</span></span><br><span class="line">nvm install 24.11.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使用这个版本</span></span><br><span class="line">nvm use 24.11.1</span><br><span class="line"></span><br><span class="line"><span class="comment"># 设置为默认版本</span></span><br><span class="line">nvm <span class="built_in">alias</span> default 24.11.1</span><br></pre></td></tr></table></figure></div>
+<p>然后重新 node helloworld.js，最后输出：</p>
+<div class="code-container" data-rel="Plaintext"><figure class="iseeu highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Hello, Node.js!</span><br><span class="line">Node.js 版本：v24.11.1</span><br><span class="line">当前工作目录：D:\work\my-study-notes\node-test</span><br><span class="line">操作系统：win32</span><br></pre></td></tr></table></figure></div>
+<p>还可以检查全局安装路径</p>
+<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 查看 npm 全局包安装路径</span></span><br><span class="line">npm config get prefix</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看 npm 配置</span></span><br><span class="line">npm config list</span><br><span class="line"></span><br><span class="line"><span class="comment"># 查看 Node.js 安装路径</span></span><br><span class="line"><span class="built_in">which</span> node</span><br><span class="line"><span class="comment"># Windows 上使用</span></span><br><span class="line"><span class="built_in">where</span> node</span><br></pre></td></tr></table></figure></div>
 		</div>
 
 		
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> Notes on learning css</li>
+        <li><strong>Title:</strong> node.js 简介与 nvm</li>
         <li><strong>Author:</strong> 虚帅</li>
         <li><strong>Created at
-                :</strong> 2025-11-21 00:00:00</li>
+                :</strong> 2025-12-11 00:00:00</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2025-11-22 18:45:12
+                    :</strong> 2025-12-12 13:04:25
             </li>
         
         <li>
-            <strong>Link:</strong> https://liujasmyn411.github.io/2025/11/21/css/
+            <strong>Link:</strong> https://liujasmyn411.github.io/2025/12/11/node.js 与 nvm/
         </li>
         <li>
             <strong>
@@ -449,7 +507,7 @@
 		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
 			
 			<li class="tag-item mx-0.5">
-				<a href="/blog/tags/css/">#css</a>&nbsp;
+				<a href="/blog/tags/node-js/">#node.js</a>&nbsp;
 			</li>
 			
 		</ul>
@@ -461,12 +519,12 @@
 		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
 			
 			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="prev" rel="prev" href="/blog/2025/11/22/how-to-change-hexo-theme/">
+				<a class="prev" rel="prev" href="/blog/2025/12/12/javascript/">
 					<span class="left arrow-icon flex justify-center items-center">
 						<i class="fa-solid fa-chevron-left"></i>
 					</span>
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">如何更改 Hexo 博客的主题</span>
+						<span class="post-nav-title-item truncate max-w-48">js</span>
 						<span class="post-nav-item">Prev posts</span>
 					</span>
 				</a>
@@ -474,9 +532,9 @@
 			
 			
 			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="next" rel="next" href="/blog/2025/11/21/html/">
+				<a class="next" rel="next" href="/blog/2025/11/22/how-to-change-hexo-theme/">
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">Notes on learning html</span>
+						<span class="post-nav-title-item truncate max-w-48">如何更改 Hexo 博客的主题</span>
 						<span class="post-nav-item">Next posts</span>
 					</span>
 					<span class="right arrow-icon flex justify-center items-center">
@@ -538,8 +596,8 @@
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
-		<div class="page-title">Notes on learning css</div>
-		
+		<div class="page-title">node.js 简介与 nvm</div>
+		<ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF-Node-js"><span class="nav-text">什么是 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-Node-js"><span class="nav-text">安装 Node.js</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E7%AC%AC%E4%B8%80%E4%B8%AA-Node-js-%E7%A8%8B%E5%BA%8F"><span class="nav-text">运行第一个 Node.js 程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Node-js-%E6%A0%B8%E5%BF%83%E6%9C%BA%E5%88%B6"><span class="nav-text">Node.js 核心机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AA-Node-js-%E7%A8%8B%E5%BA%8F"><span class="nav-text">创建第一个 Node.js 程序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nvm"><span class="nav-text">nvm</span></a></li></ol>
 
 	</div>
 </div>
