@@ -58,11 +58,59 @@ x = 'reno';
 
 Number 0;Boolean false;String;Undefined;Null
 
-程序里的数字前面加 0，表示八进制。前面加 0x，表示十六进制。最大值和最小值。NaN 不是一个数字；Infinity 无穷大，-Infinity 无穷小。
+1. Number-数值型
+程序里的数字前面加 0，表示八进制。前面加 0x，表示十六进制。最大值和最小值。NaN 不是一个数字；Infinity 无穷大，-Infinity 无穷小。用 isNaN 来判断非数字，是数字返回 false 不是数字返回 true。
 ```js
 var num1 = 010 //输出 8
 var num2 = 0xa //输出 10
 console.log(Number.MAX_VALUE);
 console.log(Number.MIN_VALUE);
+console.log(isNaN(12));
+console.log(isNaN(我是reno));
+```
+2. String-字符串型
+字符串引号嵌套，单双引号交替使用。
+字符串转义符，都是用\开头的，\n是换行符，\t缩进，\b空格。
+1) 检测字符串长度 length
+```js
+var str1 = "my name is Reno";
+console.log(str1.length);//输出 15
+```
+2) 字符串拼接 +
+数值和数值拼接是运算，其余数据类型都可以拼接，变量要写在引号外
+```js
+console.log("沙漠" + "骆驼");//输出沙漠骆驼
+var reno = Undefined
+console.log("reno" + 1) //输出 NaN
+var ageR = 20
+console.log("Reno 今年" + ageR + "岁");
+```
+3. Boolean
+运算时，true 当作 1，false 当作 0
+```js
+var flag1 = true; 
+var flag2 = false;
+console.log(flag1 + 1);//输出 2
+console.log(flag2 + 1);//输出 1
+```
+4. Undefined 和 Null
+如果变量声明却未赋值，输出 Undefined
+```js
+var year = null
+console.log(year + 1);//输出 1
+```
+
+**获取变量数据类型-typeof**
+prompt 取过来的数据是字符型的
+```js
+var num3 = 10;
+console.log(typeof num3);//输出 number
+
+var num4 = null;
+console.log(typeof num4);//输出 object
+
+var num5 = prompt('请输入您的年龄')
+console.log(num5);
+console.log(typeof num5);//输出 string
 ```
 
