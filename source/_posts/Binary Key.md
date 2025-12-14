@@ -1,5 +1,5 @@
 ---
-title: Binary Key
+title: BinaryKey
 date: 2025-12-15
 tags: 
 ---
