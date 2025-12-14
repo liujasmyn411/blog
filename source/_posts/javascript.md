@@ -54,7 +54,7 @@ var x = 10;
 x = 'reno';
 ``` 
 ##### 数字类型分类
-**简单数字类型**
+###### 简单数字类型**
 
 Number 0;Boolean false;String;Undefined;Null
 
@@ -100,7 +100,8 @@ var year = null
 console.log(year + 1);//输出 1
 ```
 
-**获取变量数据类型-typeof**
+###### 获取变量数据类型-typeof
+
 prompt 取过来的数据是字符型的
 ```js
 var num3 = 10;
@@ -113,4 +114,36 @@ var num5 = prompt('请输入您的年龄')
 console.log(num5);
 console.log(typeof num5);//输出 string
 ```
+###### 数据类型转换
 
+1. **转换为字符型**
+1) 变量名.toString
+```js
+var num = 10;
+var str = num.toString();
+console.log(str);
+console.log(typeof str);
+```
+2) String(变量名)
+```js
+console.log(String(num6));
+```
+3) **用 + 拼接 隐式转换**
+
+2. **转换为数字型**
+1) parseInt(变量) 可以把字符型转化为数字型 得到的是整数 不是四舍五入
+```js
+var age1 = prompt('请输入你的年龄');
+console.log(parseInt(age));
+        
+console.log(parseInt('3.14'));//输出 3
+console.log(parseInt('3.94'));//输出 3
+console.log(parseInt('100px'));//输出 100 做动画会遇到
+```
+2)  parseFloat(变量) 可以把字符型转化为数字型 得到小数、浮点数
+基本用法与 parseInt 一致
+```js
+console.log(parseFloat('3.14'));
+```
+3) Number
+4) 隐式转换 - * /
