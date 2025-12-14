@@ -1,7 +1,7 @@
 ---
-title: Notes on learning css
+title: Binary Key
 date: 2025-12-15
-tags: css
+tags: 
 ---
 [官方文档](https://metis.builders/docs/binary-key)显示 Metis Self-hosted API Binary 需要使用 Binary Key 以获取报价和构建交换交易服务。**所有请求都需要一个有效的二进制密钥。**
 
