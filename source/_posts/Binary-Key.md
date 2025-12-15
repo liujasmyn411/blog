@@ -22,6 +22,7 @@ tags:
 质押足够的 Jup 后，进入[Portal](https://portal.metis.builders/)填写申请，注意需使用**质押 Jup 的钱包**连接。
 2. 填写信息
 连接成功后填入必要的信息如：Email、Telegram、GitHub URL 和申请原因。填写完成后，点击 request access 申请访问等待审核，如有后续问题可以进入 Jupiter 官方 Discord 进行提问。Binary Key 申请成功后通过你**填写的电子邮件**接收。
+![Portal](./image/Portal.png)
 
 **注意：绝对不要将 Binary Key 提交到版本控制系统，或是在客户端代码中暴露它。请使用环境变量来安全地存储 Binary Key。**
 
