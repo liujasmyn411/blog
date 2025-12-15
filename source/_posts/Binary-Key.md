@@ -7,15 +7,11 @@ tags:
 
 下面是获取 Binary Key 的步骤：
 #### 质押 Jup
-1. 连接你的 Solana 钱包
-首先要在[https://vote.jup.ag/](https://vote.jup.ag/)质押 Jup，点击页面右上角的“Connect Wallet”​ 按钮，连接你的 **Solana 钱包**，保证钱包里有**至少 10000 Jup** 用于质押，并保留少量 Sol 作为交易手续费。
-2. 输入质押数量：
-在质押页面，输入你希望质押的 Jup 数量（至少 10000 Jup）。
-3. 确认并签署交易：
-点击“Stake Jup”​ 按钮，仔细检查交易详情，然后确认签名。
-4. 等待确认：
-交易提交到区块链后，等待几秒钟即可确认。成功后，你的质押状态会立即更新。
-注意：质押后可以领取投票权参与 Jupiter DAO 的治理。 
+1. 连接你的 Solana 钱
+2. 输入质押数量
+3. 确认并签署交易
+4. 等待确认
+具体步骤见另一篇文章[Stake-Jup](https://liujasmyn411.github.io/blog/2025/12/15/Stake-Jup/)
 
 #### 填写申请
 1. 连接钱包
