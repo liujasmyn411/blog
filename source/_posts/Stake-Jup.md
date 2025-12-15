@@ -7,19 +7,26 @@ tags: Jupiter
 
 #### 兑换 Jup
 首先在 [https://vote.jup.ag/](https://vote.jup.ag/)购入适当数量的 Jup，我先购入了 10 刀，兑换了 50 多个 Jup。
-![stake1](./image/stake1.png)
+
+<img src="/blog//images/stake1.png" title="stake1]" width="400px"/>
 
 #### 质押 Jup
 拥有足够多的 Jup 之后在[https://vote.jup.ag/](https://vote.jup.ag/)进行兑换，要选 stake，unstake 是解除质押。
-![stake2](./image/stake2.png)
+
+<img src="/blog//images/stake2.png" title="stake2]" width="400px"/>
+
 输入想质押的金额，点击 stake 确认交易是否正确，确认后等待几秒质押状态会更新。
-![stake3](./image/stake3.png)
+
+<img src="/blog//images/stake3.png" title="stake3]" width="400px"/>
+
 这里显示我成功质押了 50 多个 Jup。
 
 #### 质押的作用
 质押 Jup 后可以获取投票权参与 Jup DAO 的治理。
-![stake4](./image/stake4.png)
+<img src="/blog//images/stake4.png" title="stake4]" width="400px"/>
+
 **注意：解除质押需要 7 天左右的时间，再次期间，你依旧拥有投票权，只是权重会降低。**
+
 当然如果你质押的足够多，超过 10000 枚 Jup，就可以尝试申请 Binary Key，
 
 #### 主动质押奖励
@@ -28,4 +35,4 @@ tags: Jupiter
 现在的奖励发放是 5000 万枚 JUP，资金来源于 Jupiter 平台的部分收入和首次代币分发活动中用户未领取的代币。
 
 [ASR](https://vote.jup.ag/asr) 不是看某一天质押了多少，而是看在整个季度内平均质押了多少。质押得越早、数量越大，分到的奖励就越多。在现在的活动期间内，平均质押量达到 50 JUP 及以上就有资格获得 ASR。
-![Active-Staking](./image/Active-staking.png)
+<img src="/blog//images/Active-staking.png" title="Active-Staking]" width="400px"/>
