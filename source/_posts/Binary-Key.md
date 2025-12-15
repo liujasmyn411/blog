@@ -1,5 +1,5 @@
 ---
-title: BinaryKey
+title: Binary-Key 
 date: 2025-12-15
 tags: 
 ---
@@ -30,5 +30,3 @@ tags:
 
 参考
 [https://metis.builders/docs/binary-key#request-binary-key](https://metis.builders/docs/binary-key#request-binary-key)
-
-
