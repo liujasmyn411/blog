@@ -1,5 +1,5 @@
 ---
-title: js
+title: js-变量与数据
 date: 2025-12-12
 tags: js
 ---
@@ -20,7 +20,7 @@ prompt(info)
 #### 2 变量
 变量是存放数据的容器，我们通过变量名获取数据，甚至数据可以修改。
 
-**变量的使用**
+##### 变量的使用
 
 1.声明变量
 var 是 variable 的缩写，声明后计算机自动为变量分配内存空间
@@ -33,18 +33,18 @@ var age
 age = 20 //给 age 这个变量赋值 20
 ```
 
-**交换两个变量**
+##### 交换两个变量
 
 交换两个变量，需要用到临时变量 temp
 ```js
-    var temp;
-    var apple1 = '青苹果';
-    var apple2 = '红苹果';
-    temp = apple1;
-    apple1 = apple2
-    apple2 = temp
-    console.log(apple1)
-    console.log(apple2)
+var temp;
+var apple1 = '青苹果';
+var apple2 = '红苹果';
+temp = apple1;
+apple1 = apple2
+apple2 = temp
+console.log(apple1)
+console.log(apple2)
 ```
 
 #### 数据类型
@@ -54,7 +54,7 @@ var x = 10;
 x = 'reno';
 ``` 
 ##### 数字类型分类
-###### 简单数字类型**
+###### 简单数字类型
 
 Number 0;Boolean false;String;Undefined;Null
 
@@ -148,72 +148,11 @@ console.log(parseFloat('3.14'));
 3) Number
 4) 隐式转换 - * /
 
-2. **转换为布尔型**
+3. **转换为布尔型**
 ```js
 console.log(Boolean(''));
 console.log(Boolean(0));
 console.log(Boolean(NaN));
 console.log(Boolean(null));
 console.log(Boolean(undefined));//输出 false，其余输出为 true
-```
-#### 运算符
-##### 算数运算符
-+ - * / %（取余）浮点数直接运算有精度问题，可以解决。理解表达式和返回值，右边计算表达式，计算完将值赋值到左边
-
-##### 递增运算符
-++num 和 num++ 单独使用时，输出结果相同，但是和其他表达式一起用就不一样。
-1. 前置递增运算符
-++num 相等于 num=num+1，**先自加 1 再返回**，递增运算符要搭配变量使用
-
-```js
-var num7 = 10;
-console.log(++num7 + 10);//21
-console.log(num7);//10
-```
-
-2. 后置递增运算符
-**num++ 先返回原值再自加 1**
-
-```js
-var num8 = 10;
-console.log(num8++ + 10);//20
-console.log(num8);//11
-```
-##### 比较运算符
->= <= 
-==：默认转换数据类型，字符串型转换为数值型，值相等
-!=：不等于
-===：全等，值和数据类型完全一致
-!==：不全等
-
-##### 逻辑运算符
-逻辑运算符是用来进行布尔值运算的运算符，其返回值也是布尔值，开发中常用于多个条件的判断
-&&：逻辑与
-||：逻辑或
-!：逻辑非
-```js
-console.log(3>5 && 3>2);//false
-console.log(3>5 || 3>2);//true
-console.log(!true);//false
-```
-###### 短路运算
-
-当有多个表达式或者值时，左边的表达式值可以确定结果时，就不再继续运算右边的表达式的值。
-1. 逻辑与：表达式 1 && 表达式 2
-若第一个表达式为真，则返回表达式 2；若第一个表达式为假，则返回表达式 1；
-```js
-console.log(123 && 456);//456
-console.log(0 && 456);//0
-```
-
-2. 逻辑或：表达式 1 || 表达式 2
-第一个表达式为真，则返回表达式 1；若第一个表达式为假，则返回表达式 2；
-```js
-console.log(123 || 456);//123
-console.log(0 || 456);//456
-```
-```js
-var num9 = 0;
-console.log(123 || num9++);//123
-console.log(num9);//0
 ```
