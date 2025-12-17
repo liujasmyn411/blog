@@ -74,5 +74,65 @@ switch (key) {
         break;
 }
 ```
-
 #### 循环结构
+##### for 循环
+初始化变量就是用 var 声明的一个普通变量，通常用于计数器使用；条件表达式是终止的条件；操作表达式是每次循环最后执行的代码，用于计数器变量进行递增或递减。
+
+for 语法结构如下
+```js
+for (let index = 0; index < array.length; index++) {
+    const element = array[index];
+    
+}
+//输出 100 次你好呀 i++ 最后执行
+for(var i = 1; i <= 100; i++){
+    console.log('你好呀');
+}
+```
+##### 断点调试
+<img src="/blog//images/断点.png" title="断点调试" width="400px"/>
+
+##### for 循环重复循环相同代码
+```js
+var num = prompt('输入循环的次数')
+for(var i = 1; i <= num; i++){
+    console.log('你好呀');
+}
+```
+##### for 循环重复循环不相同代码
+```js
+for(var i = 1; i <= 100; i++){
+    if (i==1) {
+        console.log('年轻');
+    }else if(i==100){
+         console.log('老了');
+    }else{
+        console.log('你好呀');
+    }   
+}
+```
+##### for 循环重复相同算数运算操作
+求 1~100 的相加的和 sum+i
+```js
+var sum = 0
+for (var i =1; i <=100; i++){
+    sum = sum + i
+}
+console.log(sum);
+average = sum/100;
+console.log(average);//求平均数
+```
+奇数和与偶数和
+```js
+var even = 0
+    odd = 0
+for (var i =1; i <=100; i++){
+    if (i % 2 == 0) {
+        even = even + i;
+    } else {
+        odd = odd + i;
+    }
+}
+console.log('奇数和' + even);
+console.log('偶数和' + odd);
+```
