@@ -74,8 +74,9 @@ switch (key) {
         break;
 }
 ```
-#### 循环结构
-##### for 循环
+
+### 循环结构
+#### for 循环
 初始化变量就是用 var 声明的一个普通变量，通常用于计数器使用；条件表达式是终止的条件；操作表达式是每次循环最后执行的代码，用于计数器变量进行递增或递减。
 
 for 语法结构如下
@@ -126,7 +127,7 @@ console.log(average);//求平均数
 ```js
 var even = 0
     odd = 0
-for (var i =1; i <=100; i++){
+for (var i = 1; i <= 100; i++){
     if (i % 2 == 0) {
         even = even + i;
     } else {
@@ -136,3 +137,54 @@ for (var i =1; i <=100; i++){
 console.log('奇数和' + even);
 console.log('偶数和' + odd);
 ```
+用户输入一行打印 几 个星星，采取追加字符串的方式
+```js
+var num = prompt('请输入星星的个数');
+var str = '';
+for (var i = 1; i <= num; i++) {
+    str = str + '☆';
+}
+console.log(str);
+```
+##### 双重 for 循环
+循环嵌套 基本结构
+```js
+for(var i = 1; i <= 3; i++) {
+    console.log('外循环' + i + '次');
+        for(var j = 1; j <= 3; j++) {
+        console.log('内循环' + j + '次');
+        }
+}
+```
+#### while 循环
+基本结构：当条件表达式为 true 执行循环体，为假停止执行，也有计数器和技术表达式
+```js
+while (条件表达式) {
+    //循环体
+}
+
+var num = 1;
+    while (num <= 100) {
+    console.log('你好');
+    num++;
+}
+```
+不输入正确答案就一直循环
+```js
+var message = prompt('一闪一闪');
+while (message !== '亮晶晶') {
+    message = prompt('一闪一闪');
+}
+alert('恭喜答对');
+```
+#### do while 循环
+基本结构：先执行一次循环体再判断条件，条件表达式结果为真，继续循环，反之退出循环。
+```js
+do {
+    // 循环体
+}while(条件表达式)
+```
+
+#### continue 与 break
+continue 跳出当前循环
+breakk 跳出整个循环
