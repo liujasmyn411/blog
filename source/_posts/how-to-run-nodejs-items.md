@@ -36,7 +36,7 @@ npm run dev
 
 但是我在 npm run dev 这一步遇到了困难，出现了 Node.js 原生模块（lightningcss）的兼容性问题。
 
-<img src="/blog/images/lightningcss.png" title="lightningcss" width="400px"/>
+<img src="/blog/images/lightningcss.png" title="lightningcss" width="600px"/>
 
 lightningcss 是一个用 Rust 编写的 CSS 处理工具，在 Windows 上需要编译为 .node 扩展名的原生模块。
 
