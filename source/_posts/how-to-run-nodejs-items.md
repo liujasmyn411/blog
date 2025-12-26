@@ -19,12 +19,12 @@ npm -v
 ### 安装依赖
 1. 打开终端进入存放解压文件的根目录，我是
 ```bash
-D:\run\pm-config-web>
+D:\run\app
 ```
 2. 安装项目所需的包
 运行以下命令，它会根据 package.json 文件自动下载所有必需的库（依赖项会安装到 node_modules 文件夹）。一般不会马上安装成功，需要等待几分钟。
 ```bash
-npm ins
+npm install
 ```
 3. 运行项目并访问
 运行以下命令，这会在本地启动一个开发服务器，在浏览器中访问终端提示的地址（通常是 http://localhost:3000），就能看到你的 Next.js 应用了。
