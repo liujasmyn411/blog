@@ -100,4 +100,13 @@ console.log(get(1,2));
 ```
 
 #### arguments
-当不确定有多少参数传递的时候，可以用 arguments 来获取，arguments 对象中存储了传递的所有实参。
+当不确定有多少参数传递的时候，可以用 arguments 来获取，arguments 对象中存储了传递的所有实参。调用结果是伪数组，有 length 属性，没有 pop() push()
+```js
+function fn() {
+    console.log(arguments); // 里面存储了所有传递过来的实参
+    console.log(arguments.length); 
+            
+}
+fn(1, 2, 3); //Arguements(3) [1, 2, 3]
+```
+#### 命名函数与匿名函数
