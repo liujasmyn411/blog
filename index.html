@@ -368,7 +368,7 @@
 
         <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/blog/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/blog/categories">
@@ -376,7 +376,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/blog/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">16</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">17</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -412,7 +412,11 @@
 
                     <div class="home-article-content markdown-body">
                         
-                            <p>介绍一下 git alias 这个 git 命令，简单来说这个命令可以为 git 命令设置最适合你的别名。</p>
+                            
+                            alias 是什么介绍一下 git alias 这个 git 命令，简单来说这个命令可以为 git 命令设置最适合你的别名。比如我们要提交 commit 时通常需要执行以下命令：
+123git add .git commit -m &quot;我是备注&quot;git push
+但是利用 alias 命令更改命令别名后可以这样执行：
+123git add .git ci &quot;我是备...
                         
                     </div>
 
@@ -456,6 +460,64 @@
                 
                 <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
                     <h3 class="home-article-title">
+                        <a href="/blog/2025/12/27/wsl/">
+                            wsl
+                        </a>
+                    </h3>
+
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            本来想在 win 上运行一个 Next.js 文件，但遇到了 Node.js 原生模块（lightningcss）的兼容性问题，没有运行成功，所以想采用 wsl 方案。
+WSL 是什么WSL（Windows Subsystem for Linux）是微软在 Windows 10 和 Windows 11 操作系统中内置的 Linux 兼容层，它允许用户在 Windows 系统上直接运行 Li...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Sat Dec 27 2025 00:00:00 GMT+0800">
+                
+                    2025-12-27
+                
+            </span>
+        </span>
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/blog/tags/wsl/">wsl</a>&nbsp;
+                        </li>
+                    
+                        <li>
+                            | 
+                            <a href="/blog/tags/node/">node</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/blog/2025/12/27/wsl/">Read more<span class="seo-reader-text">wsl</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
+</div>
+
+                </div>
+            </li>
+        
+            <li class="home-article-item">
+
+                
+
+                
+
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
                         <a href="/blog/2025/12/26/how-to-run-nodejs-items/">
                             how-to-run-nodejs-items
                         </a>
@@ -467,7 +529,9 @@
                             今天尝试运行了一个 node.js 项目，记录一下运行的过程和遇到的问题。
 这个项目 Next.js​ 项目，并且使用了 TypeScript。运行它需要遵循 Node.js&#x2F;TypeScript 项目的标准流程。
 准备环境
-Node.js首先要确保安装 Node.js，不确定是否安装的可以在命令行中运行以下命令来检查。具体安装方法见 (https://liujasmyn411.g...
+Node.js首先要确保安装 Node.js，不确定是否安装的可以在命令行中运行以下命令来检查。具体安装方法见 node.js 简介与 nvm。
+
+12nod...
                         
                     </div>
 
@@ -508,7 +572,7 @@ Node.js首先要确保安装 Node.js，不确定是否安装的可以在命令�
                         
                             
                             what代码名字在某个范围内起效果，可以减少命名冲突并提高程序的可靠性。
-全局作用域全局：整个 script 标签或一个 js 文件
+全局作用域全局：整个 script 标签或一个 js 文件，
 局部作用域 (函数作用域)在函数内部
 
                         
@@ -869,71 +933,6 @@ if-else 双分支基本结构如下，若 if 里的表达式为 true，则执行
                 </div>
             </li>
         
-            <li class="home-article-item">
-
-                
-
-                
-
-                
-                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
-                    <h3 class="home-article-title">
-                        <a href="/blog/2025/12/15/javascript2/">
-                            js-运算符
-                        </a>
-                    </h3>
-
-                    <div class="home-article-content markdown-body">
-                        
-                            
-                            运算符算数运算符
-
-
-&#x2F; %（取余）浮点数直接运算有精度问题，可以解决。理解表达式和返回值，右边计算表达式，计算完将值赋值到左边
-
-
-
-
-
-递增运算符++num 和 num++ 单独使用时，输出结果相同，但是和其他表达式一起用就不一样。
-
-前置递增运算符++num 相等于 num&#x3D;num+1，先自加 1 再返回，递增运算符要搭配变量使用
-
-123var num7 = 10...
-                        
-                    </div>
-
-                    <div class="home-article-meta-info-container">
-    <div class="home-article-meta-info">
-        <span><i class="fa-solid fa-calendars"></i>&nbsp;
-            <span class="home-article-date" data-date="Mon Dec 15 2025 00:00:00 GMT+0800">
-                
-                    2025-12-15
-                
-            </span>
-        </span>
-        
-        
-            <span class="home-article-tag">
-                <i class="fa-solid fa-tags"></i>&nbsp;
-                <ul>
-                    
-                        <li>
-                            
-                            <a href="/blog/tags/js/">js</a>&nbsp;
-                        </li>
-                    
-                </ul>
-            </span>
-        
-    </div>
-
-    <a href="/blog/2025/12/15/javascript2/">Read more<span class="seo-reader-text">js-运算符</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
-</div>
-
-                </div>
-            </li>
-        
     </ul>
 
     <div class="home-paginator px-7 py-5">
@@ -964,7 +963,7 @@ if-else 双分支基本结构如下，若 if 里的表达式为 true，则执行
 </div>
                 <div class="statistics flex justify-around my-2.5">
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/blog/tags">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">9</div>
         <div class="label text-third-text-color text-sm">Tags</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/blog/categories">
@@ -972,7 +971,7 @@ if-else 双分支基本结构如下，若 if 里的表达式为 true，则执行
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/blog/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">16</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">17</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -1000,7 +999,7 @@ if-else 双分支基本结构如下，若 if 里的表达式为 true，则执行
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        16 posts in total
+                        17 posts in total
                     </span>
                     
                 </p>
