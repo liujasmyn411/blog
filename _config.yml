@@ -106,3 +106,4 @@ deploy:
   repo: https://github.com/liujasmyn411/blog.git
   branch: gh-pages  # 专门用于存放静态文件的分支
   message: "up blog"
+  verbose: true

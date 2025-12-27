@@ -8,7 +8,7 @@ tags:
 这个项目 Next.js​ 项目，并且使用了 TypeScript。运行它需要遵循 Node.js/TypeScript 项目的标准流程。
 ### 准备环境
 1. Node.js
-首先要确保安装 Node.js，不确定是否安装的可以在命令行中运行以下命令来检查。具体安装方法见 (https://liujasmyn411.github.io/blog/2025/12/11/node.js%20%E4%B8%8E%20nvm/)[https://liujasmyn411.github.io/blog/2025/12/11/node.js%20%E4%B8%8E%20nvm/]。
+首先要确保安装 Node.js，不确定是否安装的可以在命令行中运行以下命令来检查。具体安装方法见 [node.js 简介与 nvm](https://liujasmyn411.github.io/blog/2025/12/11/node.js%20%E4%B8%8E%20nvm/)。
 ```bash
 node -v
 npm -v
@@ -27,7 +27,7 @@ D:\run\app
 npm install
 ```
 3. 运行项目并访问
-运行以下命令，这会在本地启动一个开发服务器，在浏览器中访问终端提示的地址（通常是 http://localhost:3000），就能看到你的 Next.js 应用了。
+运行以下命令，这会在本地启动一个开发服务器，在浏览器中访问终端提示的地址就能看到你的 Next.js 应用了。
 ```bash
 npm run dev
 ```
@@ -62,7 +62,7 @@ npm rebuild lightningcss
 npm uninstall lightningcss
 npm install lightningcss
 ```
-但都不太奏效，所以我选择手动添加：
+但都不太奏效，所以我尝试 WSL 方案。
 
 
 
