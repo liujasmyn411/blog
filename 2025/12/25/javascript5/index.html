@@ -133,14 +133,14 @@
         
         <meta name="description" content="纯手工古法编码，拒绝 AI 预制程序。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="js-作用域">
+<meta property="og:title" content="js-作用域及对象">
 <meta property="og:url" content="https://liujasmyn411.github.io/2025/12/25/javascript5/index.html">
 <meta property="og:site_name" content="Jasmyn 的 blog">
 <meta property="og:description" content="纯手工古法编码，拒绝 AI 预制程序。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://liujasmyn411.github.io/images/redefine-og.webp">
 <meta property="article:published_time" content="2025-12-24T16:00:00.000Z">
-<meta property="article:modified_time" content="2025-12-27T13:33:57.771Z">
+<meta property="article:modified_time" content="2025-12-29T12:25:35.020Z">
 <meta property="article:author" content="Jasmyn">
 <meta property="article:tag" content="js">
 <meta name="twitter:card" content="summary">
@@ -156,7 +156,7 @@
     
     <title>
         
-            js-作用域 | 虚帅
+            js-作用域及对象 | 虚帅
         
     </title>
 
@@ -322,7 +322,7 @@
         <div class="label text-third-text-color text-sm">Categories</div>
     </a>
     <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/blog/archives">
-        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">17</div>
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">18</div>
         <div class="label text-third-text-color text-sm">Posts</div>
     </a>
 </div>
@@ -345,7 +345,7 @@
 		<div class="article-title relative w-full">
 			
 			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">js-作用域</h1>
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">js-作用域及对象</h1>
 			</div>
 			
 		</div>
@@ -373,8 +373,8 @@
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-12-27 21:33:57</span>
-            <span class="mobile">2025-12-27 21:33:57</span>
+            <span class="desktop">2025-12-29 20:25:35</span>
+            <span class="mobile">2025-12-29 20:25:35</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -410,22 +410,48 @@
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
 			<h3 id="what"><a href="#what" class="headerlink" title="what"></a>what</h3><p>代码名字在某个范围内起效果，可以减少命名冲突并提高程序的可靠性。</p>
 <h4 id="全局作用域"><a href="#全局作用域" class="headerlink" title="全局作用域"></a>全局作用域</h4><p>全局：整个 script 标签或一个 js 文件，</p>
-<h4 id="局部作用域-函数作用域"><a href="#局部作用域-函数作用域" class="headerlink" title="局部作用域 (函数作用域)"></a>局部作用域 (函数作用域)</h4><p>在函数内部</p>
+<h4 id="局部作用域-函数作用域"><a href="#局部作用域-函数作用域" class="headerlink" title="局部作用域 (函数作用域)"></a>局部作用域 (函数作用域)</h4><p>在函数内部 比如 var</p>
+<h3 id="预解析"><a href="#预解析" class="headerlink" title="预解析"></a>预解析</h3><p>函数提前，</p>
+<div class="code-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">f1</span> ();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(c);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(b);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(a);</span><br><span class="line"><span class="keyword">function</span> <span class="title function_">f1</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> a = b = c = <span class="number">9</span>;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(a);</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(b);</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(c);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>相当于以下：</p>
+<div class="code-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">f1</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> a </span><br><span class="line">    a = b = c = <span class="number">9</span>; <span class="comment">//a 局部变量，b=c=9 是全局变量</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(a);</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(b);</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(c);</span><br><span class="line">&#125;</span><br><span class="line"><span class="title function_">f1</span> ();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(c);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(b);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(a);<span class="comment">//9 9 9 9 9 报错</span></span><br></pre></td></tr></table></figure></div>
 
+<h3 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h3><p>在 JavaScript 中，对象是一组无序的相关属性和方法的集合，所有的事物都是对象，例如字符串、数值、数组、函数等。对象是由属性和方法组成的。<br>属性：事物的特征，在对象中用属性来表示 (常用名词)<br>方法：事物的行为，在对象中用方法来表示 (常用动词)<br><strong>变量与属性的区别</strong><br>都可以储存数据<br>变量：单独声明并赋值，使用时直接写变量名 单独存在<br>属性：在{}里不需要声明，直接写，调用属性有规定的调用方法<br><strong>函数与方法的区别</strong><br>都实现某种功能<br>函数单独声明，并且调用的，单独存在<br>方法 在对象里面 有调用方法</p>
+<h4 id="创建并使用对象"><a href="#创建并使用对象" class="headerlink" title="创建并使用对象"></a>创建并使用对象</h4><ol>
+<li>利用对象字面量{}<br>键值对的形式，多个属性和方法之间用逗号隔开。</li>
+</ol>
+<div class="code-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">    <span class="attr">uname</span>: <span class="string">&#x27;liu&#x27;</span>,</span><br><span class="line">    <span class="attr">age</span>: <span class="number">22</span>, <span class="comment">// 属性</span></span><br><span class="line">    <span class="attr">sayHi</span>: <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(hi); <span class="comment">// 方法</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+<p>调用对象属性</p>
+<div class="code-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj.<span class="property">uname</span>);<span class="comment">// . 理解为的</span></span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(obj[<span class="string">&#x27;uname&#x27;</span>]);<span class="comment">// 第二种使用方法</span></span><br></pre></td></tr></table></figure></div>
+<p>调用对象方法</p>
+<div class="code-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">obj.<span class="title function_">sayHi</span>(); <span class="comment">// 小括号</span></span><br></pre></td></tr></table></figure></div>
+<ol start="2">
+<li>利用 new Object<br>等号赋值，用分号结束，调用方法相同</li>
+</ol>
+<div class="code-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = <span class="keyword">new</span> <span class="title class_">Object</span>();</span><br><span class="line">obj.<span class="property">uname</span> = <span class="string">&#x27;Ll&#x27;</span>;</span><br><span class="line">obj.<span class="property">age</span> = <span class="number">22</span>;</span><br><span class="line">obj.<span class="property">sayHi</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;hello&#x27;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
+
+<ol start="3">
+<li>利用构造函数<br>前面的两种方法一次只能构造一次对象，利用函数可以快速构造大量对象。<br>构造函数名<strong>首字母大写</strong>，不需要 return 就可以返回对象</li>
+</ol>
+<div class="code-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Name</span>(<span class="params">形参</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.属性 = 值;</span><br><span class="line">    <span class="variable language_">this</span>.方法 = <span class="keyword">function</span> (<span class="params"></span>) &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">new</span> 构造函数名 (实参);</span><br></pre></td></tr></table></figure></div>
+<p>示例：</p>
+<div class="code-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="title function_">Star</span>(<span class="params">uname, age</span>) &#123;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">name</span> = uname;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">age</span> = age;</span><br><span class="line">    <span class="variable language_">this</span>.<span class="property">sing</span> = <span class="title function_">finction</span>(<span class="params">song</span>) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(song);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> ldh = <span class="keyword">new</span> <span class="title class_">Star</span>(<span class="string">&#x27;刘德华&#x27;</span>, <span class="number">10</span>,);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(ldh.<span class="property">name</span>);</span><br><span class="line">ldh.<span class="title function_">sing</span>(<span class="string">&#x27;one&#x27;</span>);</span><br><span class="line"><span class="keyword">var</span> zxy = <span class="keyword">new</span> <span class="title class_">Star</span>(<span class="string">&#x27;张学友&#x27;</span>, <span class="number">11</span>,);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(ldh.<span class="property">name</span>);</span><br><span class="line">zxy.<span class="title function_">sing</span>(<span class="string">&#x27;two&#x27;</span>);</span><br></pre></td></tr></table></figure></div>
+<h4 id="遍历对象-for-in"><a href="#遍历对象-for-in" class="headerlink" title="遍历对象-for in"></a>遍历对象-for in</h4><p>循环 但遍历对象是无序的，用 for in。k 是变量，也可以写别的</p>
+<div class="code-container" data-rel="Js"><figure class="iseeu highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">    name = <span class="string">&#x27;liu&#x27;</span>,</span><br><span class="line">    age = <span class="number">1</span>,</span><br><span class="line">    sex = <span class="string">&#x27;男&#x27;</span>,</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> k <span class="keyword">in</span> obj) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(k); <span class="comment">// 输出属性名</span></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(obj[k]); <span class="comment">// 输出属性值</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div>
 		</div>
 
 		
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> js-作用域</li>
+        <li><strong>Title:</strong> js-作用域及对象</li>
         <li><strong>Author:</strong> 虚帅</li>
         <li><strong>Created at
                 :</strong> 2025-12-25 00:00:00</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2025-12-27 21:33:57
+                    :</strong> 2025-12-29 20:25:35
             </li>
         
         <li>
@@ -540,8 +566,8 @@
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
-		<div class="page-title">js-作用域</div>
-		<ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#what"><span class="nav-text">what</span></a></li></ol>
+		<div class="page-title">js-作用域及对象</div>
+		<ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#what"><span class="nav-text">what</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A2%84%E8%A7%A3%E6%9E%90"><span class="nav-text">预解析</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AF%B9%E8%B1%A1"><span class="nav-text">对象</span></a></li></ol>
 
 	</div>
 </div>
@@ -568,7 +594,7 @@
                 
                 <p class="post-count space-x-0.5">
                     <span>
-                        17 posts in total
+                        18 posts in total
                     </span>
                     
                 </p>
