@@ -1,7 +1,7 @@
 ---
 title: wsl
 date: 2025-12-27
-tags: [wsl, node]
+tags: wsl, node
 ---
 本来想在 win 上运行一个 Next.js 文件，但遇到了 Node.js 原生模块（lightningcss）的兼容性问题，没有运行成功，所以想采用 wsl 方案。
 ###  WSL 是什么
@@ -42,7 +42,7 @@ wsl --set-default kali-linux # 切换默认的Linux子系统
 
 ### 运行项目
 先进入项目目录，我是拿到的 node.js 的压缩包，我直接把解压后的文件夹复制到了 Linux 下。
-<img src="/blog/images/wsl.png" title="wsl" width="600px"/>
+<img src="/blog/images/wsl1.png" title="wsl" width="600px"/>
 
 ```bash
 npm install
