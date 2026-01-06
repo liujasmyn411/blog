@@ -6,7 +6,7 @@ tags: Jupiter
 本篇记录一下质押 Jup 的过程，质押 Jup 可以获得奖励哦~
 
 #### 兑换 Jup
-首先在 [https://vote.jup.ag/](https://vote.jup.ag/)购入适当数量的 Jup，我先购入了 10 刀，兑换了 50 多个 Jup。
+首先在 [https://jup.ag/](https://jup.ag/)购入适当数量的 Jup，我先购入了 10 刀，兑换了 50 多个 Jup。
 
 <img src="/blog//images/stake1.png" title="stake1]" width="400px"/>
 
