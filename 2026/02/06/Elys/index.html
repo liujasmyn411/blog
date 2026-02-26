@@ -123,7 +123,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://liujasmyn411.github.io/2026/02/11/bigmodel/"/>
+    <link rel="canonical" href="https://liujasmyn411.github.io/2026/02/06/elys/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -133,16 +133,16 @@
         
         <meta name="description" content="纯手工古法编码，拒绝 AI 预制程序。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="智谱以及如何在 Discord 对接 openclaw 的 bot 客服">
-<meta property="og:url" content="https://liujasmyn411.github.io/2026/02/11/bigmodel/index.html">
+<meta property="og:title" content="Elys 使用体验">
+<meta property="og:url" content="https://liujasmyn411.github.io/2026/02/06/Elys/index.html">
 <meta property="og:site_name" content="Jasmyn 的 blog">
 <meta property="og:description" content="纯手工古法编码，拒绝 AI 预制程序。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://liujasmyn411.github.io/images/redefine-og.webp">
-<meta property="article:published_time" content="2026-02-10T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-02-11T12:13:03.390Z">
+<meta property="article:published_time" content="2026-02-05T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-02-26T16:36:49.006Z">
 <meta property="article:author" content="Jasmyn">
-<meta property="article:tag" content="ai">
+<meta property="article:tag" content="using">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://liujasmyn411.github.io/images/redefine-og.webp">
     
@@ -156,7 +156,7 @@
     
     <title>
         
-            智谱以及如何在 Discord 对接 openclaw 的 bot 客服 | 虚帅
+            Elys 使用体验 | 虚帅
         
     </title>
 
@@ -345,7 +345,7 @@
 		<div class="article-title relative w-full">
 			
 			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">智谱以及如何在 Discord 对接 openclaw 的 bot 客服</h1>
+				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">Elys 使用体验</h1>
 			</div>
 			
 		</div>
@@ -366,15 +366,15 @@
 					<div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2026-02-11</span>
-        <span class="mobile">2026-02-11</span>
+        <span class="desktop">2026-02-06</span>
+        <span class="mobile">2026-02-06</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2026-02-11 20:13:03</span>
-            <span class="mobile">2026-02-11 20:13:03</span>
+            <span class="desktop">2026-02-27 00:36:49</span>
+            <span class="mobile">2026-02-27 00:36:49</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -386,7 +386,7 @@
             <ul>
                 
                     <li>
-                        <a href="/blog/tags/ai/">ai</a>&nbsp;
+                        <a href="/blog/tags/using/">using</a>&nbsp;
                     </li>
                 
             </ul>
@@ -408,41 +408,69 @@
 
 
 		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<h3 id="1-智谱是什么"><a href="#1-智谱是什么" class="headerlink" title="1 智谱是什么"></a>1 智谱是什么</h3><p><a class="link"   target="_blank" rel="noopener" href="https://bigmodel.cn/" >智谱 AI 开放平台<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>是北京智谱华章科技有限公司推出的一站式人工智能大模型服务平台。</p>
-<p>它主要面向开发者和企业，提供基于 GLM 系列大模型的 API 接口及相关开发工具。简单来说，我们可以通过这个平台把智谱的 AI 能力集成到你自己的开发项目中。</p>
-<h3 id="2-核心内容"><a href="#2-核心内容" class="headerlink" title="2 核心内容"></a>2 核心内容</h3><h4 id="1-核心模型矩阵"><a href="#1-核心模型矩阵" class="headerlink" title="1.核心模型矩阵"></a>1.核心模型矩阵</h4><p>平台托管了智谱自主研发的全模态模型，涵盖了不同的应用场景：</p>
-<p>语言模型 (GLM-4 &#x2F; GLM-3.5)：用于对话、创作、代码生成和逻辑推理。</p>
-<p>多模态模型 (CogVLM &#x2F; GLM-4V)：能够理解图片内容并进行问答。</p>
-<p>图像生成 (CogView)：支持根据文字描述生成高质量图片。</p>
-<p>视频生成 (CogVideo)：支持文生视频、图生视频以及首尾帧生成。</p>
-<p>向量模型 (Embedding)：用于构建知识库检索（RAG）和语义搜索。</p>
-<h4 id="2-主要功能与服务"><a href="#2-主要功能与服务" class="headerlink" title="2.主要功能与服务"></a>2.主要功能与服务</h4><p>API 调用：提供标准 RESTful API，兼容 OpenAI SDK 协议，方便开发者低成本迁移。</p>
-<p>智能体中心 (Agent)：支持零代码或低代码构建 AI 智能体，集成外部工具（如搜索、计算器、代码解释器）。</p>
-<p>模型精调 (Fine-tuning)：允许用户上传自有数据对模型进行微调，以适应特定的行业需求。</p>
-<p>长文本支持：部分模型支持极长的上下文输入（如 GLM-4-Long），适合处理长篇文档或复杂代码库。</p>
-<h3 id="3-用-GLM-Flash-模型对接-openclaw-的-bot-客服"><a href="#3-用-GLM-Flash-模型对接-openclaw-的-bot-客服" class="headerlink" title="3 用 GLM-Flash 模型对接 openclaw 的 bot 客服"></a>3 用 GLM-Flash 模型对接 openclaw 的 bot 客服</h3><h4 id="1-准备-Discord-Bot"><a href="#1-准备-Discord-Bot" class="headerlink" title="1.准备 Discord Bot"></a>1.准备 Discord Bot</h4><ol>
-<li>获取 Bot Token<br>访问 <a class="link"   target="_blank" rel="noopener" href="https://discord.com/developers/applications" >Discord Developer Portal<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>，点击 New Application，起个名字。从左侧进入 Bot 选项卡，点击 Reset Token 获取你的 <strong>Bot Token</strong>，需要输入你的 discord 密码才能获取。</li>
-</ol>
-<p><strong>注意</strong>：向下滚动找到 Privileged Gateway Intents，开启 Presence Intent、Server Members Intent、Message Content Intent。</p>
-<ol start="2">
-<li>复制 Generated URL<br>从左侧进入 OAuth2 选项卡进入 OAuth2，勾选 bot 和 Administrator 或具体权限。复制生成的链接，并在浏览器打开，将机器人邀请进你的群组。</li>
-</ol>
-<h4 id="2-获取-GLM-Flash-的-API-Key"><a href="#2-获取-GLM-Flash-的-API-Key" class="headerlink" title="2.获取 GLM-Flash 的 API Key"></a>2.获取 GLM-Flash 的 API Key</h4><p>访问 <a class="link"   target="_blank" rel="noopener" href="https://bigmodel.cn/" >智谱 AI 开放平台<i class="fa-solid fa-arrow-up-right ml-[0.2em] font-light align-text-top text-[0.7em] link-icon"></i></a>，点击右上角的控制台，进入后选择 GLM-4.7 API 接入。可能无法复制 API Key，创建一个新的就好啦。<br><img  
+			<p>Elys 是需要邀请码才可以注册的，一个账号有 5 个邀请码，一起来看看这到底是一款什么样的产品吧！</p>
+<p>有了邀请码之后，通过微信进行注册，注册过程中 Elys 会让你选择你的性格和爱好以及职业，并让你上传一张图片和一段声音方便生成你的 ai 形象，再有它会询问你一些问题，比如你的 MBTI 有没有给你带来困扰，在社交中无法忍受什么，需要 Elys 帮你做什么，对某件事的看法。还让你选择你在 social 时的语气，总之和 Elys 聊的越详细，在之后的使用中 Elys 越贴近你本人，越能准确的达到你的社交需求。</p>
+<h4 id="Actions"><a href="#Actions" class="headerlink" title="Actions"></a>Actions</h4><p>Action 板块展示的是 ai 根据你的信息替你浏览点赞评论过的帖子。</p>
+<img  
                      lazyload
                      src="/images/loading.svg"
-                     data-src="/blog//images/GLM1.png"
-                      title="GLM1" width="400px"
+                     data-src="/blog//images/Elys-actions.png"
+                      title="Elys" hight="600px"
+                >
+
+<p>ai 替你发出评论后，你的评论会出现 AI 的提示，你可以点击认可，ai 的提示会变为认可的提示，将 ai 的互动和你的互动合二为一。内心 os 就是表面意思啦。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/blog//images/Elys-actions2.png"
+                      title="Elys" hight="600px"
+                >
+
+<h4 id="Space"><a href="#Space" class="headerlink" title="Space"></a>Space</h4><p>Space 板块展现的是你可能感兴趣的帖子。点开邀请朋友可以看到你的 5 个邀请码。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/blog//images/Elys-actions3.png"
+                      title="Elys" hight="600px"
                 ></p>
-<h4 id="3-配置-OpenClaw"><a href="#3-配置-OpenClaw" class="headerlink" title="3.配置 OpenClaw"></a>3.配置 OpenClaw</h4><p>当你拿到了新的智谱 API Key 和 Discord Bot Token 后，回到你的 Ubuntu 终端</p>
-<div class="code-container" data-rel="Bash"><figure class="iseeu highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.openclaw/openclaw.json</span><br></pre></td></tr></table></figure></div>
-<p>之后会让你输入 Bot Token 和 API Key 并进行其他基础配置。比如</p>
-<p>Default model，我选择了 zai&#x2F;glm-4.7-flash。</p>
-<p>Discord channels access，选择 Allowlist，因为这是比较安全的操作方式。机器人只会响应你明确授权的频道。这能防止机器人在不相关的频道里产生不必要的回复。</p>
-<p>Discord channels allowlist，这一步是让你指定机器人只在哪些频道里说话。</p>
-<p>还会让你安装用于查询地理位置、周边商家信息的插件，这并不是 bot 的核心工作，可以不安装。</p>
-<p>Enable hooks，可以选择 session-memory 和 command-logger。</p>
-<p>最后让你给机器人设定“人设”，我是“智简客服”，一个基于 GLM-Flash 的智能助手。请称呼我为“小助”。我的回答风格：简单明了，不使用难懂的术语，优先提供解决问题的步骤。</p>
-<h4 id="4-测试"><a href="#4-测试" class="headerlink" title="4.测试"></a>4.测试</h4><p>可以直接在 discord 频道里，艾特机器人。看他回不回复。</p>
+<h4 id="消息"><a href="#消息" class="headerlink" title="消息"></a>消息</h4><p>在消息板块里你可以与其他的 ai 分身交流。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/blog//images/Elys-actions4.png"
+                      title="Elys" hight="600px"
+                ></p>
+<h4 id="话题"><a href="#话题" class="headerlink" title="话题"></a>话题</h4><p>话题版块里有默认的 Ask Me Anything，你可以设定一个讨论主题和对分身的要求，与 ai 进行对话。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/blog//images/Elys-actionsA.png"
+                      title="Elys" hight="600px"
+                ></p>
+<p>还可以新增话题，比如你可以给 ai 布置任务，让它浏览什么样的帖子，找什么样的人，都可以让它去做。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/blog//images/Elys-actions5.png"
+                      title="Elys" hight="600px"
+                ></p>
+<h4 id="聊天"><a href="#聊天" class="headerlink" title="聊天"></a>聊天</h4><p>在这个版块里，ai 会向你进行“工作汇报”，并总结今天它浏览的帖子。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/blog//images/Elys-actions6.png"
+                      title="Elys" hight="600px"
+                ></p>
+<h4 id="记忆库"><a href="#记忆库" class="headerlink" title="记忆库"></a>记忆库</h4><p>在记忆库里存放着你与 ai 对话过程中的想法，ai 会帮你总结出来，也会记录你的爱好、行为准则和最近的状态。如果你主动发了帖子，它也会揣测你发帖子的本意，你可以接受它的“揣测”，也可以微调记忆。</p>
+<img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/blog//images/Elys-actions7.png"
+                      title="Elys" hight="600px"
+                >
+
+<p>总之，你在 Elys 的一切行为都会被记录分析，被记录分析的越多，对齐率也就越高，ai 分身就会越接近你本身。</p>
+<h4 id="我的分身"><a href="#我的分身" class="headerlink" title="我的分身"></a>我的分身</h4><p>我的分身里包含你的 ai 形象、ai 声音以及你的专属表情包哦。<br><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="/blog//images/Elys-actions8.png"
+                      title="Elys" hight="600px"
+                ></p>
 
 		</div>
 
@@ -450,18 +478,18 @@
 		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
 			<div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> 智谱以及如何在 Discord 对接 openclaw 的 bot 客服</li>
+        <li><strong>Title:</strong> Elys 使用体验</li>
         <li><strong>Author:</strong> 虚帅</li>
         <li><strong>Created at
-                :</strong> 2026-02-11 00:00:00</li>
+                :</strong> 2026-02-06 00:00:00</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2026-02-11 20:13:03
+                    :</strong> 2026-02-27 00:36:49
             </li>
         
         <li>
-            <strong>Link:</strong> https://liujasmyn411.github.io/2026/02/11/bigmodel/
+            <strong>Link:</strong> https://liujasmyn411.github.io/2026/02/06/Elys/
         </li>
         <li>
             <strong>
@@ -483,7 +511,7 @@
 		<ul class="post-tags-box text-lg mt-1.5 flex-wrap justify-center flex md:hidden">
 			
 			<li class="tag-item mx-0.5">
-				<a href="/blog/tags/ai/">#ai</a>&nbsp;
+				<a href="/blog/tags/using/">#using</a>&nbsp;
 			</li>
 			
 		</ul>
@@ -495,12 +523,12 @@
 		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
 			
 			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="prev" rel="prev" href="/blog/2026/02/20/server/">
+				<a class="prev" rel="prev" href="/blog/2026/02/11/bigmodel/">
 					<span class="left arrow-icon flex justify-center items-center">
 						<i class="fa-solid fa-chevron-left"></i>
 					</span>
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">什么时候需要服务器，数据库又是什么？</span>
+						<span class="post-nav-title-item truncate max-w-48">智谱以及如何在 Discord 对接 openclaw 的 bot 客服</span>
 						<span class="post-nav-item">Prev posts</span>
 					</span>
 				</a>
@@ -508,9 +536,9 @@
 			
 			
 			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="next" rel="next" href="/blog/2026/02/06/Elys/">
+				<a class="next" rel="next" href="/blog/2025/12/30/days/sundry-learning-2/">
 					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">Elys 使用体验</span>
+						<span class="post-nav-title-item truncate max-w-48"></span>
 						<span class="post-nav-item">Next posts</span>
 					</span>
 					<span class="right arrow-icon flex justify-center items-center">
@@ -572,8 +600,8 @@
 		<div class="post-toc-wrap">
 	<div class="post-toc">
 		<div class="toc-title">On this page</div>
-		<div class="page-title">智谱以及如何在 Discord 对接 openclaw 的 bot 客服</div>
-		<ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-%E6%99%BA%E8%B0%B1%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-text">1 智谱是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-%E6%A0%B8%E5%BF%83%E5%86%85%E5%AE%B9"><span class="nav-text">2 核心内容</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-%E7%94%A8-GLM-Flash-%E6%A8%A1%E5%9E%8B%E5%AF%B9%E6%8E%A5-openclaw-%E7%9A%84-bot-%E5%AE%A2%E6%9C%8D"><span class="nav-text">3 用 GLM-Flash 模型对接 openclaw 的 bot 客服</span></a></li></ol>
+		<div class="page-title">Elys 使用体验</div>
+		
 
 	</div>
 </div>
