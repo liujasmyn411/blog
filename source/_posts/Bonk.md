@@ -1,9 +1,10 @@
 ---
-title: Bonk 及其产品介绍
+title: Bonk 及其核心机制
 date: 2025-12-29
 tags: Bonk
+excerpt: 科普！科普！我只是知识的搬运工!Bonk 是一个建立在 Solana 上的大型加密货币社区和生态系统。本篇文章简单介绍了一下 BONK、BONK 的部分产品以及核心机制。
 ---
-Bonk 是一个建立在 **Solana 链**上的大型加密货币社区和生态系统。
+BONK 是一个建立在 **Solana 链**上的大型加密货币社区和生态系统。
 ### 1 Bonkrewards
 Bonkrewards 是 Bonk 生态官方推出的一个质押奖励平台。
 特别之处在于 BonKrewards 的奖励来源于 Bonk 生态产品的实际收入。平台会将这些收入的一部分分配给在 Bonkrewards 上锁仓的用户。锁仓时间越长，锁仓数量越多锁定期间能申领 Bonk 也会越多，具体的比例可以参考下图
@@ -11,7 +12,7 @@ Bonkrewards 是 Bonk 生态官方推出的一个质押奖励平台。
 
 #### 质押流程
 1. 准备工作
-钱包中需持有 $BONK 以及少量的 SOL，SOL 是用来支付网络手续费的。
+钱包中需持有 BONK 以及少量的 SOL，SOL 是用来支付网络手续费的。
 2. 质押操作
 1) 连接钱包
 访问[bonkrewards.com](bonkrewards.com)，并连接钱包。
@@ -21,12 +22,12 @@ Bonkrewards 是 Bonk 生态官方推出的一个质押奖励平台。
 奖励一般不会自动发放到钱包，需要主动领取。
 
 ### 2 Bonkfun
-BONKfun 是 Bonk 团队推出的一个 Memecoin 发射平台。
+BONKfun 是 BONK 团队推出的一个 Memecoin 发射平台。
 
 <img src="/blog/images/Bonkfun1.png" title="lightningcss" width="600px"/>
 
 ### 3 Bonkmark
-Bonk 版本的电子贺卡，可以让用户轻松地将自己的亲朋好久引入加密货币世界。
+BONK 版本的电子贺卡，可以让用户轻松地将自己的亲朋好久引入加密货币世界。
 同样，发贺卡之前需保证自己的钱包有足够的$BONK 和 SOL。通过[https://bonkmark.com/](https://bonkmark.com/)进入 Bonkmark 官网。
 1. 选择卡片
 官方提供了多张贺卡
